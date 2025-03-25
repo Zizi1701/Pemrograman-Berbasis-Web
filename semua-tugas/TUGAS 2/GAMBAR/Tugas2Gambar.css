@@ -1,0 +1,26 @@
+body{
+    
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-inline:300px;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+img{
+    padding: 10px;
+    background-color: brown;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out, opacity 0.3s;
+}
+
+img:hover {
+    transform: rotateY(180deg) scale(1.1);
+}
