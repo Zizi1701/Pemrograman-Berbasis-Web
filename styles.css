@@ -1,0 +1,259 @@
+/* styles.css */
+:root {
+    --yellow-primary: #FFC107;
+    --yellow-dark: #FFA000;
+    --yellow-light: #FFECB3;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-color);
+    color: #333;
+    line-height: 1.6;
+    padding-top: 110px; /* padding top disesuaikan dengan navbar fixed */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.navbar.bg-yellow {
+    background-color: var(--yellow-primary) !important;
+    background-image: linear-gradient(to right, var(--yellow-dark), var(--yellow-primary));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: auto;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    color: var(--dark-color) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Main Container */
+.container.main-container {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.shadow-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.shadow-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+.flight-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control, .form-select {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--yellow-primary);
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+/* Button Styles */
+.btn-yellow {
+    background-color: var(--yellow-primary);
+    color: var(--dark-color);
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-yellow:hover {
+    background-color: var(--yellow-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Result Container */
+.result-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.table {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.table th {
+    width: 30%;
+    background-color: var(--yellow-light);
+    padding: 0.75rem;
+}
+
+.table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+.table-warning {
+    background-color: var(--yellow-light) !important;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .navbar-brand {
+        height: auto;
+    }
+
+    .navbar-brand img {
+        height: 70px;
+    }
+
+    .container.main-container {
+        margin-top: 1rem;
+    }
+
+    body {
+        padding-top: 90px;
+    }
+
+    .shadow-box {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+    .shadow-box {
+        padding: 1.25rem;
+    }
+
+    .form-control, .form-select {
+        padding: 0.65rem 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+
+    .shadow-box {
+        padding: 1rem;
+    }
+
+    .btn-yellow {
+        padding: 0.6rem 1.5rem;
+        width: 100%;
+    }
+}
