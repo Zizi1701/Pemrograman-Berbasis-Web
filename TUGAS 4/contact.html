@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Carsite</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="card.css">
+</head>
+<body class="bg-secondary">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="https://i.pinimg.com/736x/17/7c/3a/177c3a68bdc4c231e145eb9548a61401.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+                Carsite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="container my-5">
+        <h2 class="text-white">Contact Us</h2>
+        <p class="text-white">If you have any questions, feel free to reach out to us. muehehe!</p>
+        <div class="card p-4">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Imail Plijeu">
+                </div>
+                <div class="row">                                                
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="Your Legit Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Your Sigma Name">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4" placeholder="What smth Skibidi you want to tell us?"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn btn-warning">Send</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

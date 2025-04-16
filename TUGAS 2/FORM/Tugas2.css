@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'inter', serif;
+    justify-content: center;
+    display: flex;
+    background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEgIn8EDfTJezJOihrL2OyMdB6DLslXTuCcJC2cXytXq5C_z79OKOmpibJiDy8A7qi-B3LChm6g6R1k4f4Y7f2mmrgkmmPJvq_D43yrACh3bbLu585U8-fzex9npwOteW0p-fLJ8eJ5yi7vJbsJ6Ix7hIRWSncq3c40XvIgOwxPoQlNYvtrhFqurDXj8KZGk=s1024);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 700px; 
+}
+
+button{
+    padding-inline: 18px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(81, 81, 255, 0.767);
+    color: aliceblue;
+    border: 0;
+    box-shadow: blue;
+    display: block;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+h1{
+ text-align: center;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    width: 1000px;
+    height: 10px;
+}
+
+input[type="text"] {
+    width: 668px;
+    height: 20px;
+    font-size: 16px; 
+    padding: 5px;
+}
+
+select{
+    width: 680px;
+    height: 30px;
+    font-size: 16px; 
+    padding: 5px;
+}
